@@ -25,6 +25,7 @@ https://nihcc.app.box.com/v/ChestXray-NIHCC
 Dla poprawy jakości modelu warto wykorzystać architekturę dedykowaną do tego typu danych np. chexnet https://github.com/arnoweng/CheXNet?tab=readme-ov-file
 W ramach zadania należy samodzielnie przygotować zbiór ChestX-ray do problemu wpółnadzorowanego uczenia i odpowiednio dostosować metodę FixMatch
 
+
 ## Project Organization
 
 ---
@@ -77,3 +78,12 @@ W ramach zadania należy samodzielnie przygotować zbiór ChestX-ray do problemu
 ---
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+## AQ
+- Czy jest możliwość udostępnienia zewnętrznego środowiska wykonawczego?
+
+Jak rozumiemy problem:
+- Labelowanie FixMachem
+- Wykorzystanie zalabelowanych danych do klasyfikacji choroby i miejsca występowania (bouding boxy) poprzez chexnet
+- Jaki baseline przyjąć?
+
