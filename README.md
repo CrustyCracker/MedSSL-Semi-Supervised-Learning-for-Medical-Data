@@ -79,11 +79,38 @@ W ramach zadania należy samodzielnie przygotować zbiór ChestX-ray do problemu
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
+
+Dziękuję za dokumentację wstępną. Mam wrażenie że zupełnie nie zrozumieli Panowie o co chodzi w problemie semi-supervised learning, nie przeczytali Panowie jak działa metoda FixMatch którą mają Panowie dostosować i nie sprawdzili Panowie jak wygląda zbiór ChestX-ray. 
+- Zbiór ChestX-ray jest w pełni opisany, Panów zadanie polega na dostosowanie go do problemu SSL - zasymulowanie (w rozsądny spsób) braku niektórych anotacji (analogicznie do tego co znajduje się w artykule opisującym FixMatcha)
+- "Przed przystąpieniem do trenowania docelowego modelu, należy znaleźć sposób na możliwie najlepsze nadanie etykiet, nieoznaczonym danym z podanego zbioru." - To zdanie jest nieprawdziwe - nadawanie etykiet powinno zgodnie z implemetacją FixMatcha następować w trakcie trenowania modelu
+- "Mamy więc do czynienia z dwoma niezależnymi etapami, z których każdy wymaga osobnej walidacji." - to zdanie również jest nieprawdziwe, bo nie mamy żadnych dwóch niezależnych etapów.
+- Plan działania jest nieadekwatny do metod które chcą Panowie wykorzystać
+- Jeśli chdzi o ewaluację to proszę skupić się na metrykach wykorzystywanych w problemie, czyli AUC lub accuracy
+
+
 ## AQ
 - Czy jest możliwość udostępnienia zewnętrznego środowiska wykonawczego?
 
 Jak rozumiemy problem:
 - Labelowanie FixMachem
 - Wykorzystanie zalabelowanych danych do klasyfikacji choroby i miejsca występowania (bouding boxy) poprzez chexnet
-- Jaki baseline przyjąć?
+- Jaki baseline przyjąć? ODP: model który jest uczony na małej ilości danych, bez użycia fixmacha
+- czy do walidacji użyć ground truth czy tego co da nam fixmach? Zapominamy o wymazanym ground true
 
+Skitzo notatki z 06/05/24
+
+uwaga może być multilabel
+
+multiclass, jak predykcja??
+Różny podział 
+
+Bez bez dolabelowanych 
+14:30
+
+Porównanie ze względu na 
+3 modele
+Do predykcji: jedna klasa wybrana,cutoffy, cutoffy per klasa Krzywe ROC
+
+
+Do ustalenia cutoffu:
+Krzywe ROC lub Precision ROC do cutoffu dane treningowe
