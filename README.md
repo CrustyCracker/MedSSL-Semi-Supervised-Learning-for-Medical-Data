@@ -12,7 +12,7 @@ Bartosz Latosek
 
 Semi-supervised learning and medical data
 The problem of semi-supervised learning occurs when we have data at our disposal, only some of which has been correctly described by experts. This problem often occurs in medical data where case reports are very expensive. Then it is worth using additional, undescribed data that can help learn more general features.
-The task involves the implementation of one of the best performing SSL methods - FixMatch: https://github.com/google-research/fixmatch in the problem of semi-supervised classification of medical data - X-ray images of the lungs appearing in the ChestX-ray set https://openaccess.thecvf. com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf
+The task involves the implementation of one of the best performing SSL methods - FixMatch: https://github.com/google-research/fixmatch in the problem of semi-supervised classification of medical data - X-ray images of the lungs appearing in the ChestX-ray set https://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf
 https://nihcc.app.box.com/v/ChestXray-NIHCC
 To improve the quality of the model, it is worth using an architecture dedicated to this type of data, e.g. chexnet https://github.com/arnoweng/CheXNet?tab=readme-ov-file
 As part of the task, you must independently prepare the ChestX-ray set for the semi-supervised learning problem and adapt the FixMatch method accordingly.
@@ -85,7 +85,7 @@ Dziękuję za dokumentację wstępną. Mam wrażenie że zupełnie nie zrozumiel
 - "Przed przystąpieniem do trenowania docelowego modelu, należy znaleźć sposób na możliwie najlepsze nadanie etykiet, nieoznaczonym danym z podanego zbioru." - To zdanie jest nieprawdziwe - nadawanie etykiet powinno zgodnie z implemetacją FixMatcha następować w trakcie trenowania modelu
 - "Mamy więc do czynienia z dwoma niezależnymi etapami, z których każdy wymaga osobnej walidacji." - to zdanie również jest nieprawdziwe, bo nie mamy żadnych dwóch niezależnych etapów.
 - Plan działania jest nieadekwatny do metod które chcą Panowie wykorzystać
-- Jeśli chdzi o ewaluację to proszę skupić się na metrykach wykorzystywanych w problemie, czyli AUC lub accuracy
+- Jeśli chodzi o ewaluację to proszę skupić się na metrykach wykorzystywanych w problemie, czyli AUC lub accuracy
 
 
 ## AQ
@@ -104,13 +104,17 @@ uwaga może być multilabel
 multiclass, jak predykcja??
 Różny podział 
 
-Bez bez dolabelowanych 
+Bez bez dolabelowanych
 14:30
 
 Porównanie ze względu na 
 3 modele
-Do predykcji: jedna klasa wybrana,cutoffy, cutoffy per klasa Krzywe ROC
+Do predykcji: jedna klasa wybrana, cutoffy, cutoffy per klasa Krzywe ROC
 
 
 Do ustalenia cutoffu:
 Krzywe ROC lub Precision ROC do cutoffu dane treningowe
+
+31/05/24
+
+- zapytać, czy sprawko ma spoko rozkład
