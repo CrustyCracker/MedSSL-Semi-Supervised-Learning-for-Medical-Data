@@ -120,3 +120,4 @@ Krzywe ROC lub Precision ROC do cutoffu dane treningowe
 - zapytać, czy sprawko ma spoko rozkład
 - Dopytać, czy opisywać dokładnie SSL itd, czy wykładać teorie???
 - Czy walidować ze względu na stosunek ilości danych oznaczonych do nieoznaczonych???
+- czy opisywać kod w dokumentacji, może wystarczą komentarze w kodzie?
