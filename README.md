@@ -118,3 +118,4 @@ Krzywe ROC lub Precision ROC do cutoffu dane treningowe
 31/05/24
 
 - zapytać, czy sprawko ma spoko rozkład
+- Dopytać, czy opisywać dokładnie SSL itd, czy wykładać teorie???
