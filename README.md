@@ -113,11 +113,15 @@ Do predykcji: jedna klasa wybrana, cutoffy, cutoffy per klasa Krzywe ROC
 
 
 Do ustalenia cutoffu:
-Krzywe ROC lub Precision ROC do cutoffu dane treningowe
+Krzywe ROC lub Precision Recall ROC do cutoffu dane treningowe
 
 31/05/24
 
 - zapytać, czy sprawko ma spoko rozkład
-- Dopytać, czy opisywać dokładnie SSL itd, czy wykładać teorie???
-- Czy walidować ze względu na stosunek ilości danych oznaczonych do nieoznaczonych???
-- czy opisywać kod w dokumentacji, może wystarczą komentarze w kodzie?
+- Dopytać, czy opisywać dokładnie SSL itd, czy wykładać teorie??? NIE, jeden paragraf że mówimy o SSL
+- Czy walidować ze względu na stosunek ilości danych oznaczonych do nieoznaczonych??? TAK
+- czy opisywać kod w dokumentacji, może wystarczą komentarze w kodzie? comy starczą
+
+Sprawdzić czy zdjęcia z tego samego ośrodka/pacjęta
+
+Usuwać dla konkretnych pacjęctów
